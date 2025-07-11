@@ -1,0 +1,79 @@
+/********Page Login*******/
+.login-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 100px 0;
+}
+
+.login-section h2 {
+  font-family: 'Syne';
+  font-weight: 700;
+  font-size: 30px;
+  color: #1D6154;
+  margin-bottom: 2em;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  width: 380px;
+}
+
+.login-form label {
+  margin-bottom: 0.5em;
+}
+
+.login-form input {
+  height: 50px;
+  margin-bottom: 1.5em;
+  border: none;
+  box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.09);
+  padding: 0 1em;
+  font-size: 1em;
+}
+
+.login-form button {
+  font-family: 'Syne';
+  font-weight: 700;
+  color: white;
+  background-color: #1D6154;
+  border: none;
+  border-radius: 30px;
+  height: 40px;
+  width: 180px;
+  margin: 2em auto 1em;
+  cursor: pointer;
+}
+
+.forgot-password {
+  text-align: center;
+  color: #3D3D3D;
+  font-size: 0.9em;
+  text-decoration: underline;
+}
+
+/* ✅ Ajouts demandés */
+footer {
+  margin-top: 100px; /* Mentions légales plus bas */
+}
+
+nav img {
+  height: 18px; /* Logo Instagram plus petit */
+  width: auto;
+}
+
+nav a {
+  text-decoration: none;
+  color: inherit;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Plus d'espacement dans la navbar */
+}
+
+nav .active-link {
+  font-weight: bold; /* Login en gras sur la page login */
+}

@@ -1,0 +1,63 @@
+#portfolio h2 {
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.filters {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 2em;
+  flex-wrap: wrap;
+}
+
+.filter-button {
+  padding: 8px 16px;
+  font-family: 'Syne';
+  font-weight: 700;
+  background-color: #fff;
+  border: 1px solid #1D6154;
+  border-radius: 20px;
+  color: #1D6154;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.filter-button:hover,
+.filter-button.active {
+  background-color: #1D6154;
+  color: white;
+}
+.edition-banner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+  z-index: 1000;
+  padding: 10px 0;
+}
+
+.edition-wrapper {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-family: 'Work Sans';
+  font-size: 1rem;
+}
+
+.edit-button {
+  font-size: 0.9rem;
+  color: #000;
+  margin-left: 10px;
+  cursor: pointer;
+  font-weight: normal;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
