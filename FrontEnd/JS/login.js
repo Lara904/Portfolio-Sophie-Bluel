@@ -22,8 +22,8 @@ form.addEventListener("submit", async (e) => {
 
     if (response.ok) {
       const data = await response.json();
-      localStorage.setItem("token", data.token); // ✅ sauvegarde du token
-      window.location.href = "index.html"; // ✅ redirection vers la page d’accueil
+      localStorage.setItem("token", data.token); // sauvegarde du token
+      window.location.href = "index.html"; // redirection vers la page d’accueil
     } else {
       displayError("E-mail ou mot de passe incorrect");
     }

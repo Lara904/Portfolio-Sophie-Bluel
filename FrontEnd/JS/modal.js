@@ -217,6 +217,9 @@ function setupFormListeners(modal) {
         submitButton.style.cursor = "not-allowed";
 
         showNotification("✅ Projet ajouté avec succès !");
+        
+        // Fermer automatiquement la modal après succès
+        modal.style.display = "none";
       } else {
         showNotification("❌ Erreur lors de l'ajout.", true);
       }
@@ -244,25 +247,14 @@ function showImagePreview(input) {
     img.style.maxHeight = "150px";
     img.style.maxWidth = "100%";
     img.style.objectFit = "contain";
-    preview.appendChild(img);
+    img.style.cursor = "pointer"; // Ajout du curseur pointer
     
-    // Ajouter un bouton pour changer l'image
-    const changeBtn = document.createElement("button");
-    changeBtn.type = "button";
-    changeBtn.textContent = "Modifier";
-    changeBtn.style.position = "absolute";
-    changeBtn.style.bottom = "10px";
-    changeBtn.style.right = "10px";
-    changeBtn.style.padding = "5px 10px";
-    changeBtn.style.backgroundColor = "#1D6154";
-    changeBtn.style.color = "white";
-    changeBtn.style.border = "none";
-    changeBtn.style.borderRadius = "3px";
-    changeBtn.style.cursor = "pointer";
-    changeBtn.addEventListener("click", () => {
+    // Ajouter l'événement click sur l'image pour changer de fichier
+    img.addEventListener("click", () => {
       input.click();
     });
-    preview.appendChild(changeBtn);
+    
+    preview.appendChild(img);
   } else {
     //  Réafficher le label si aucun fichier
     uploadLabel.style.display = "flex";
