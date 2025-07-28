@@ -44,7 +44,6 @@ Portfolio-Sophie-Bluel/
 📦 Installation locale
 
 1. Clonez le dépôt :
-```bash
 git clone https://github.com/Lara904/Portfolio-Sophie-Bluel.git
 Lancez le serveur back-end :
 cd Backend
